@@ -1,0 +1,36 @@
+{
+  "name": "uwutask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && tsc-alias",
+    "serve": "npm run build && node .",
+    "dev": "nodemon . --ignore out --watch src --ext ts,json,js --exec \"npm run serve\" --verbose"
+  },
+  "author": "AtomXZR",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/fs-extra": "^11.0.1",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/node": "^20.5.6",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.48.0",
+    "nodemon": "^3.0.1",
+    "tsc-alias": "^1.8.7",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.1",
+    "jsonwebtoken": "^9.0.1",
+    "sequelize": "^6.32.1",
+    "sqlite3": "^5.1.6",
+    "winston": "^3.10.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  }
+}
